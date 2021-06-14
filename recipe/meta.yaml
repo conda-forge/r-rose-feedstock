@@ -1,4 +1,4 @@
-{% set version = '0.0-3' %}
+{% set version = "0.0-4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ROSE_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ROSE/ROSE_{{ version }}.tar.gz
-  sha256: 625e598a016d4c52c7c26e0d520b6977bfe2b745bedb45d7014abd3c607e6989
+  sha256: 7750b764f30e2a1cd9bd8768897e83e5e1395f505908fb8923fb76f5e64f7b78
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,15 +36,11 @@ test:
 about:
   home: https://CRAN.R-project.org/package=ROSE
   license: GPL-2.0-only
-  summary: The package provides functions to deal with binary classification problems in the
-    presence of imbalanced classes. Synthetic balanced samples are generated according
-    to ROSE (Menardi and Torelli, 2013). Functions that implement more traditional remedies
-    to the class imbalance are also provided, as well as different metrics to evaluate
-    a learner accuracy. These are estimated by holdout, bootstrap or cross-validation
-    methods.
+  summary: The package provides functions to deal with binary classification problems in the presence of imbalanced classes. Synthetic balanced samples are generated according to ROSE (Menardi and Torelli, 2013). Functions that implement more traditional remedies to the class imbalance are also provided, as well as different
+    metrics to evaluate a learner accuracy. These are estimated by holdout, bootstrap or cross-validation methods.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
