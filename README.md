@@ -1,11 +1,11 @@
-About r-rose
-============
+About r-rose-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rose-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=ROSE
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rose-feedstock/blob/main/LICENSE.txt)
 
 Summary: The package provides functions to deal with binary classification problems in the presence of imbalanced classes. Synthetic balanced samples are generated according to ROSE (Menardi and Torelli, 2013). Functions that implement more traditional remedies to the class imbalance are also provided, as well as different metrics to evaluate a learner accuracy. These are estimated by holdout, bootstrap or cross-validation methods.
 
